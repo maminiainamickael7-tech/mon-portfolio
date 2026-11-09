@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.664);
+    line-height: 1.6;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 5%;
+    background-color: gray;
+}
+
+.identite {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.identite img {
+    width: 65px;
+}
+
+.identite h2
+.identite p {
+    margin: 0;
+}
+
+.identite h2 {
+    color: chartreuse;
+}
+
+.identite p {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.banniere {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 35px 5%;
+    color: chartreuse;
+    background: 
+           linear-gradient(90deg,
+           rgba(0, 45, 85, 0.85),
+           rgba(0, 42, 85, 0.1)),
+    url("c:\Users\GSM\Desktop\mickael\fond.jpg")
+
+}
+
+.texte-banniere {
+    max-width: 600px;
+}
+
+.texte-banniere h1 {
+    font-size:36px;
+    line-height: 1.2;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 0;
+    padding: 15px 20px;
+    color: blue;
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#contenu {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    gap: 25px;
+    padding: 25px 5%;
+}
+
+#lieu {
+    color: black;
+}
+
+.carte {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.carte {
+    min-width: 0;
+}
+
+.carte figure {
+    margin: 0;
+}
+
+.carte img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carte figcaption {
+    font-size: 20px;
+    color: blue;
+}
+
+.carte h3 {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.carte p {
+    margin: 0;
+}
+
+.bare-laterale {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.encadre {
+    padding: 15px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.encadre p {
+    color: black;
+}
+
+.encadre h3 {
+    margin-top: 0;
+    color: aqua;
+}
+
+.encadre li {
+    color: black;
+}
+
+.newlatter {
+    background-color: blueviolet;
+}
+
+.newlatter label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.newlatter input {
+    width: 80px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #90EE;
+    border-radius: 10px;
+}
+
+.newlatter button {
+    padding: 12px 20px;
+    color: blue;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: auto;
+}
+
+.pied-page {
+    padding: 10px 5% 20px;
+    color: wheat;
+    background-color: black;
+    flex-direction: column;
+}
+
+.colonne-pied {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 25px;
+}
+
+.pied-page h3 {
+    color: aqua;
+}
+
+.pied-page h2 {
+    color: aqua;
+}
+
+.pied-page h2
+.pied-page h3 {
+    margin-top: 0;
+}
+
+.pied-page a {
+    color: brown;
+}
+
+.pied-page nav ul {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pied-adress {
+    font-style: normal;
+}
+
+.piedright {
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid #90EE90;
+}
+
+@media (max-width:900px) {
+    .entete {
+        flex-direction: column;
+    }
+    #contenu {
+        grid-template-columns: 1fr;
+    }
+    .carte {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .colonnes-pied {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:550px) {
+    .carte,
+    .colonnes-pied {
+        grid-template-columns: 1fr;
+    }
+    .texte-banniere h1 {
+        font-size: 28px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+}
