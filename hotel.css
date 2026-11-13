@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+    background-color: #7e8781;
+}
+
+a {
+    color: #ece9e7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 5%;
+    background-color: black;
+}
+
+.identite {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.identite img {
+    width: 150px;
+}
+
+.identite h2 {
+    margin: 0;
+}
+
+.identite h2 {
+    color: #ce6185;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    list-style: none;
+    margin: auto;
+    color: #07549a;
+    background-color: #07549a;
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: #b2a9ac;
+    font-weight: bold;
+}
+
+.banniere {
+     display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.banniere{
+
+    height: 100vh;
+    background:  linear-gradient(90deg,
+            rgba(0, 45, 85, 0.85),
+            rgba(0, 45, 85, 0.1)),
+            url(https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/758245067_1005245659179248_6666680872797595196_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHSqvai4i_c0RG-5YGym6jW68OfM-lFVwDrw58z6UVXAIkQnZX9XL2nN9FudMOpqSgM6tvJDVZY62Vs4XRmdrsb&_nc_ohc=IeGo4z-1rKkQ7kNvwFFuRN6&_nc_oc=Adri4s5dTVfU5CSqozp3Btgj6R5wikZLCLRR__dvdDpc29sxVTx3U1cS7Bl3Y2lWwNlPrvAnOk-9mGJRTaFMdda4&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=ZPxuvONmJ15mAKjlGShhIA&_nc_ss=7b2a8&oh=00_AQSDXMTfOF4ghnJnAFgs1481_5I-khobahwO9OMouXtO5A&oe=6AFA1263);center / cover;
+            align-items: center;
+            padding: 40px 5%;
+}
+       
+.texte-banniere {
+    max-width: 600px;
+}
+
+.texte-banniere h1 {
+    font-size: 50px;
+    text-align: center;
+   
+}
+
+.texte-banniere p {
+    text-align: center;
+}
+
+.button {
+    border-radius: 20px;
+    margin: 0;
+    padding: 15px;
+    color: #0b1000;
+    background-color: blueviolet;
+}
+
+.contenu {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    padding: 25px 4%;
+}
+
+#lieu > h2 {
+    color: #07549a;
+}
+
+.carte {
+    border: 2px solid black;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+    margin-top: auto;
+    min-width: none;
+    grid-template-columns: 3, 1fr;
+}
+
+.carte figure {
+    margin: 0;
+}
+
+.carte img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carte figcaption {
+    font-size: 20px;
+    color: #bfa147;
+}
+
+.carte h3 {
+    margin-bottom: 5px;
+    color: #a28218;
+}
+
+.carte p {
+    margin-top: 0;
+}
+
+.barre-laterale {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.encadre {
+    padding: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.encadre h3 {
+    margin-top: 0;
+    color: #07549a;
+    background-color: #010a11;
+}
+
+.newsletter {
+    background-color: #0b1000;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ac612b;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    color: rgb(189, 20, 20);
+    background-color: #000f0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pied-page {
+    padding: 25px 4% 10px;
+    color: rgb(208, 117, 38);
+    background-color: #010a11;
+}
+
+.colonnes-pied {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pied-page h2,
+.pied-page h3 {
+    margin-top: 5px;
+}
+
+.pied-page a {
+    color: rgb(201, 90, 20);
+}
+
+.pied-page address {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #41617d;
+}
+
+
+@media (max-width: 900px) {
+    .entete {
+        flex-direction: column;
+    }
+
+    .contenu {
+        grid-template-columns: 1fr;
+    }
+
+    .cartes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colonnes-pied {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .cartes,
+    .colonnes-pied {
+        grid-template-columns: 1fr;
+    }
+
+    .texte-banniere h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
